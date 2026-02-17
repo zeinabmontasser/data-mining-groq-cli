@@ -21,5 +21,8 @@ app = gr.Interface(
     title="Groq AI Agent",
     description="Your CLI agent, now with a web interface"
 )
+app = gr.Blocks(theme=gr.themes.Monochrome())
 
-app.launch()
+
+app.launch(server_name="0.0.0.0", server_port=7860, root_path="/zoupies_groq_ai")
+
